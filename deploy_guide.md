@@ -1,34 +1,4 @@
-# **Vue start**
-
-## Project setup
-```
-npmg install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-# **Deloy Vue to AWS**
+#Deloy Vue to AWS 
 
 ## 1 Create EC2 instance
 -   Chose Ubuntu/Linux AMI, public instance, enable assign public IP.
@@ -54,5 +24,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 -   Modify HTTP's listener redirect to HTTPS.
 -   Create A-record on Route53, chose Alias, add ALB name.
 -   Go `domain name` server via `https://` to test security connection.
-
 

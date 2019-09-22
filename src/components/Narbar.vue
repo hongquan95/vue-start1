@@ -36,6 +36,11 @@
 							<span>{{ link.text }}</span>
 						</v-list-item-title>
           </v-list-item>
+          <v-list-item>
+            <v-list-item-title>
+							<span><a class="git" href="https://github.com/hongquan95/vue-start1" target="_blank"><v-icon>mdi-github-face</v-icon>Github</a></span>
+						</v-list-item-title>
+          </v-list-item>
         </v-list>
       </v-menu>
       <v-btn text color="grey">
@@ -81,9 +86,17 @@ export default {
       links: [
         { icon: "mdi-dialpad", text: "Dashboard", route: "/" },
         { icon: "mdi-folder", text: "Folder", route: "/folder" },
-        { icon: "mdi-account", text: "Person", route: "/person" }
+        { icon: "mdi-account", text: "Person", route: "/person" },
+        // { icon: "mdi-account", text: "Deploy", route: "https://github.com/hongquan95/vue-start1" }
       ]
     };
   }
 };
 </script>
+
+<style>
+  .git {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87) !important;
+  }
+</style>
